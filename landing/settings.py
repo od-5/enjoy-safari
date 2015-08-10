@@ -75,7 +75,7 @@ else:
          'default': {
              'ENGINE': 'django.db.backends.mysql',
              'NAME': 'enjoyafrru_safar',
-             'USER': 'enjoyafrru',
+             'USER': 'enjoyafrru_safar',
              'PASSWORD': 'f3ccb431',
              'HOST': 'localhost',
              'PORT': '',
