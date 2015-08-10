@@ -99,7 +99,7 @@ section {
   position: absolute;
   z-index: 2;
   top: 15px;
-  right: 30px;
+  right: 10px;
   width: 260px;
   color: #fff;
 }
@@ -110,6 +110,7 @@ section {
           background-size: cover;
   padding-top: 100px;
   padding-bottom: 375px;
+  position: relative;
 
   &-h1 {
     padding-bottom: 190px;
@@ -125,8 +126,11 @@ section {
     &__title {
       color: #fff;
       font-size: 36px;
+      font-weight: bold;
+      text-shadow: 0 0 1px #333;
       text-align: center;
       line-height: 1.4em;
+      padding-bottom: 30px;
     }
 
   }
@@ -170,6 +174,8 @@ section {
   -webkit-background-size: 100%;
         background-size: 100%;
   position: relative;
+  height: 605px;
+  overflow: hidden;
   &__title {
     position: absolute;
     z-index: 1;
@@ -177,14 +183,14 @@ section {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 120px;
     color: #fbf317;
   }
   &-content {
     background: rgba(0, 0, 0, 0.5);
     width: 50%;
-    padding-bottom: 80px;
+    height: 100%;
     &__title {
       font-size: 45px;
       font-weight: bold;
@@ -196,6 +202,8 @@ section {
     &-list {
       list-style-image: url('../img/list-style-image.jpg');
       margin-left: 50px;
+      width: 85%;
+      text-align: justify;
       &__item {
         padding-left: 20px;
         color: #fff;
@@ -212,6 +220,7 @@ section {
   }
   &-1 {
     background-image: url('../img/day-1.jpg');
+    height: 784px;
     &-content {
       float: left;
       &__title {
@@ -229,6 +238,9 @@ section {
     background-image: url('../img/day-3.jpg');
     &-content {
       float: left;
+      &__title {
+        line-height: 160px;
+      }
     }
   }
   &-4 {
@@ -284,7 +296,9 @@ section {
     &__title {
       color: #fff;
       text-align: center;
-      font-size: 48px;
+      text-shadow: 0 0 1px #000;
+      font-size: 38px;
+      font-weight: bold;
       line-height: 60px;
       padding-bottom: 100px;
     }
@@ -465,7 +479,10 @@ section {
     vertical-align: top;
     &-wrapper{
       &__img {
-
+        width: 320px;
+        -webkit-border-radius: 320px;
+           -moz-border-radius: 320px;
+                border-radius: 320px;
         margin: 30px 0;
       }
       &__name {
@@ -484,10 +501,27 @@ section {
       line-height: 39px;
       margin-bottom: 60px;
     }
+    .icone {
+      &-browser {
+        background: url('../img/icone/browser.png') no-repeat;
+      }
+      &-aircraft {
+        background: url('../img/icone/aircraft.png') no-repeat;
+      }
+      &-umbrella {
+        background: url('../img/icone/umbrella.png') no-repeat;
+      }
+      &-camera {
+        background: url('../img/icone/camera.png') no-repeat;
+      }
+    }
+
     &-list {
       list-style: none;
       &__item {
         &-content {
+          padding-left: 60px;
+          min-height: 50px;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 20px;
           line-height: 39px;
@@ -498,6 +532,7 @@ section {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 20px;
       line-height: 39px;
+      text-align: center;
     }
   }
 }

@@ -22,9 +22,9 @@ $(function() {
   $('.popupbutton').on('click', function(e){
     var form = $(this).parent('form');
     var name = form.find('.ticket-form__name').val();
-    var phone = form.find('.ticket-form__phone').val();
+    var email = form.find('.ticket-form__email').val();
     $('.pop-form').find('.ticket-form__name__travel').val(name)
-    $('.pop-form').find('.ticket-form__phone__travel').val(phone)
+    $('.pop-form').find('.ticket-form__email__travel').val(email)
   });
 
   $( ".pop-form" ).validate({
@@ -32,7 +32,7 @@ $(function() {
       name: {
         required: true
       },
-      phone: {
+      email: {
         required: true
       }
     },

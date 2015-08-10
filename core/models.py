@@ -35,7 +35,7 @@ class Ticket(Common):
     )
 
     name = models.CharField(verbose_name=u'Имя', max_length=256)
-    phone = models.CharField(verbose_name=u'телефон', max_length=256)
+    email = models.EmailField(verbose_name=u'Email', max_length=256)
     comment = models.TextField(verbose_name=u'Сообщение клиента', blank=True, null=True)
     sale = models.BooleanField(verbose_name=u'Продажа', default=False)
     ticket_status = models.PositiveSmallIntegerField(verbose_name=u'Статус заявки',  choices=TICKET_STATUS_CHOICE, default=0, blank=True, null=True)

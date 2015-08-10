@@ -26,14 +26,14 @@ def ticket(request):
         email = 'od-5@yandex.ru'
     if request.method == "POST":
         name = request.POST.get('name')
-        phone = request.POST.get('phone')
+        email = request.POST.get('email')
         comment = request.POST.get('comment')
-        ticket = Ticket(name=name, phone=phone, comment=comment)
+        ticket = Ticket(name=name, email=email, comment=comment)
         ticket.save()
         if comment:
-            message = u'Имя: %s\nE-mail: %s\nСообщение: %s\n' % (name, phone, comment)
+            message = u'Имя: %s\nE-mail: %s\nСообщение: %s\n' % (name, email, comment)
         else:
-            message = u'Имя: %s\nТелефон: %s\n' % (name, phone)
+            message = u'Имя: %s\nE-mail: %s\n' % (name, email)
         send_mail(
             u'enjoy-safari.ru - Заявка с сайта',
             message,
