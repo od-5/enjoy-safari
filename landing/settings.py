@@ -110,7 +110,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '../media')
 
 SUIT_CONFIG = {
     # header
-    'ADMIN_NAME': u'Landing',
+    'ADMIN_NAME': u'ENJOY_SAFARI',
     'HEADER_DATE_FORMAT': 'l, j. F Y',
     'HEADER_TIME_FORMAT': 'H:i',
 
@@ -132,5 +132,6 @@ SUIT_CONFIG = {
         {'label': u'Настройки', 'icon': 'icon-cog', 'models': ('auth.user', 'auth.group', 'core.setup')},
         {'label': u'Заявки', 'icon': 'icon-user', 'models': ('core.ticket',)},
         {'label': u'Продажи', 'icon': 'icon-user', 'models': ('core.sale',)},
+        {'label': u'enjoy-africa.ru', 'url': 'http://www.enjoy-africa.ru/admin'},
     ),
 }
