@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{{ setup.title|striptags|default:'Enjoy safari' }}</title>
+  <meta name="description" content="{{ setup.meta_desc|striptags|default:'' }}"/>
+  <meta name="keywords" content="{{ setup.meta_key|striptags|default:'' }}"/>
+  {{ setup.top_js|safe|default:'' }}
+  <script src="{{ STATIC_URL }}js/jquery-1.11.2.min.js"></script>
+  <script src="{{ STATIC_URL }}js/jquery.validate.js"></script>
+  <script src="{{ STATIC_URL }}js/jquery.form.js"></script>
+  <script src="{{ STATIC_URL }}js/jquery.fancybox.pack.js"></script>
+  <script src="{{ STATIC_URL }}js/common.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/reset.css">
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/animate.css">
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/jquery.fancybox.css">
+  {{ setup.top_js|safe|default:'' }}
+</head>
+<body>
+<div id="wrapper">
+  <header class="header">
+    <h1 class="header-h1">Групповые туры в Кению <br> по самым интересным маршрутам</h1>
+    <div class="header-form">
+      <p class="header-form__title">Напрямую от местного туроператора по специальной цене
+        <br>Только одна группа в месяц
+        <br>Набор ограничен.
+      </p>
+      {% include '__includes/ticket-form.html' %}
+    </div>
+  </header>
+  <section class="block-1">
+    <img src="{{ STATIC_URL }}img/compas.png" alt="" class="block-1__left">
+    <img src="{{ STATIC_URL }}img/africa.png" alt="" class="block-1__right">
+    <p class="block-1__title">Что тебя ждёт</p>
+    <ul class="block-1-ul">
+      <li class="block-1-ul-li">6 или 9 насыщенных дней сафари по самым интересным местам</li>
+      <li class="block-1-ul-li">Самые знаменитые национальные заповедники Кении</li>
+      <li class="block-1-ul-li">Большая концентраия хищников</li>
+      <li class="block-1-ul-li">Профессиональный водитель и гид</li>
+      <li class="block-1-ul-li">Хорошие лоди и кемпы</li>
+      <li class="block-1-ul-li">Команда единомышленников</li>
+      <li class="block-1-ul-li">Без скрытых расходов</li>
+    </ul>
+    <div class="clear"></div>
+  </section>
+  <section class="day-1 day">
+    <p class="day__title">Найроби - ol pejeta - накуру - найваша - масай мара - найроби (6 дней)</p>
+    <div class="day-1-content day-content ">
+      <p class="day-1-content__title day-content__title">день 1</p>
+      <ul class="day-content-list">
+        <li class="day-content-list__item">
+          Прилёт (утром), встреча в аэропорту и переезд в национальный парк Ol Pejeta
+          (в пути около 3,5 часов по хорошей дороге) <br>
+          Интересный и небольшой парк, находящийся у подножия горы Кения. <br>
+          Так вы сможете увидеть всю "большую пятёрку", так же побывать в питомнике для шимпанзе и носорогов. <br>
+          Единственный оставшийся белый носорог живёт здесь. <br>
+          <a href="http://www.olpejetaconservancy.org">Сайт парка: http://www.olpejetaconservancy.org</a>
+        </li>
+        <li class="day-content-list__item">
+          Заселение или в Serena Sweetwaters camp, иди в Pelican House (отдельный дом в парке)
+        </li>
+        <li class="day-content-list__item">
+          Обед, отдых и вечернее сафари по парку с посещением  питомника шимпанзе.
+        </li>
+        <li class="day-content-list__item">
+          Ужин и ночное сафари по парку, увидите ночную жизнь животных. Ночлег.
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <section class="day-2 day">
+    <div class="day-2-content day-content ">
+      <p class="day-2-content__title day-content__title">день 2</p>
+      <ul class="day-content-list">
+        <li class="day-content-list__item">
+          Завтрак и утреннее сафари по парку Ol Pejeta. <br>
+          Посещение питомника носорогов. Переезд на озеро накуру с остановкой на обед на водопадах Томпсона. <br>
+          Можно совершить небольшую прогулку к водопадам.
+        </li>
+        <li class="day-content-list__item">
+          Заселение в Kembu cottages. <br>
+          <a href="http://www.kembu.com">http://www.kembu.com</a>
+        </li>
+        <li class="day-content-list__item">
+          Коттеджи находятся рядом с парком  Накуру на территории  действующей фермы.
+        </li>
+        <li class="day-content-list__item">
+          Ужин и ночлег
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <section class="day-3 day">
+    <div class="day-3-content day-content ">
+      <p class="day-3-content__title day-content__title">день 3</p>
+      <ul class="day-content-list">
+        <li class="day-content-list__item">
+          Завтрак и сафари по парку Накуру. Визитная карточка этого парка - розовые фламинго и носороги.
+        </li>
+        <li class="day-content-list__item">
+          Обед в парке и переезд на озера Найваша.
+        </li>
+        <li class="day-content-list__item">
+          Прогулка на лодке по озеру Найваша с посещением острова Crescent, где вы можете совершить пешую прогулку. <br>
+          В озере плавает множество бегемотов.
+        </li>
+        <li class="day-content-list__item">
+          Заселение в Sopa Naivasha Lodge. <br>
+          Самый лучщий лодж на берегу озера, огромная заселённая территория,
+          вы сможете увидеть разных животных, в том числе бегемотов, посущихся по вечерам прямо у вашего номера.
+          Более бюджетный вариант заселения - Taphe GuestHouse.
+        </li>
+        <li class="day-content-list__item">
+          Ужин и ночлег
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <section class="day-4 day">
+    <div class="day-4-content day-content ">
+      <p class="day-4-content__title day-content__title">день 4</p>
+      <ul class="day-content-list">
+        <li class="day-content-list__item">
+          Завтрак в лодже и переезд на Масай Мара, в пути около 4х часов.
+        </li>
+        <li class="day-content-list__item">
+          Заселение в первый русский кемп в Масай Маре - <br>
+          Loyk Mara camp <br>
+          <a href="http://www.loyk.com/mara">http://www.loyk.com/mara</a>
+        </li>
+        <li class="day-content-list__item">
+          Небольшой отдых, обед и вечернее сафари по парку Масай Мара.
+        </li>
+        <li class="day-content-list__item">
+          Возвращение в кемп. Ужин и ночлег.
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <section class="day-5 day">
+    <div class="day-5-content day-content ">
+      <p class="day-5-content__title day-content__title">день 5</p>
+      <ul class="day-content-list">
+        <li class="day-content-list__item">
+          Завтрак и полный день сафари по парку Масай Мара. <br>
+          Самый известный и интересный парк в Кении. <br>
+          Гарантировано увидите всю "большую пятёрку".
+        </li>
+        <li class="day-content-list__item">
+          Обед в виде пикника прямо в парке.
+        </li>
+        <li class="day-content-list__item">
+          Возвращение в кемп вечером. Ужин и ночлег.
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <section class="day-6 day">
+    <div class="day-6-content day-content ">
+      <p class="day-6-content__title day-content__title">день 6</p>
+      <ul class="day-content-list">
+        <li class="day-content-list__item">
+          Завтрак и утренне сафари по парку Масай Мара.
+        </li>
+        <li class="day-content-list__item">
+          Обед и возвращение в Найроби к вечеру. <br>
+          Заселение в Meridian отель или в более бюджетном отеле Ripepeo Hotel
+        </li>
+        <li class="day-content-list__item">
+          Ужин в ресторане Карнивор.
+        </li>
+        <li class="day-content-list__item">
+          Ночлег
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <section class="day-7 day">
+    <p class="day-7__title day__title">
+      Найроби - Амбосели - Тсаво Вест - Момбаса (3 дня)
+    </p>
+    <div class="day-7-content day-content ">
+      <p class="day-7-content__title day-content__title">день 7</p>
+      <ul class="day-content-list">
+        <li class="day-content-list__item">
+          Завтрак и переезд в национальный парк Амбосели у подножия Килиманджаро. <br>
+          Посещение масайской деревни.
+        </li>
+        <li class="day-content-list__item">
+          Заселение в Kimbo Safari кемп.  Отличный кемп, находящийся
+          прямо у въезда в парк. Обед, небольшой отдых.
+        </li>
+        <li class="day-content-list__item">
+          Вечернее сафари по парку Амбосели. <br>
+          Парк открытого типа и животных очень хорошо видно. <br>
+          В парке очень много слонов <br>
+          Возвращение в кемп
+        </li>
+        <li class="day-content-list__item">
+          Ужин. Танцы Масаев у костра. Ночлег
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <section class="day-8 day">
+    <div class="day-8-content day-content ">
+      <p class="day-8-content__title day-content__title">день 8</p>
+      <ul class="day-content-list">
+        <li class="day-content-list__item">
+          Завтрак и утренне сафари по парку Амбосели. <br>
+          Пикник на смотровой площадке парка.
+        </li>
+        <li class="day-content-list__item">
+          Переезд в национальный парке Тсаво Вест  <br>
+          Пикник на территории Mzima Springs - оазис в парке.
+        </li>
+        <li class="day-content-list__item">
+          Заселение или в Loyk Tsavo camp или в Kamboyo House -
+          отдельный дом на территории парка, находящийся у водопоя для животных
+        </li>
+        <li class="day-content-list__item">
+          Вечернее сафари по парку. Ужин и ночлег.
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <section class="day-9 day">
+    <div class="day-9-content day-content ">
+      <p class="day-9-content__title day-content__title">день 9</p>
+      <ul class="day-content-list">
+        <li class="day-content-list__item">
+          Завтрак и утренне сафари по парку Тсаво Вест,
+          переезд на побережье в Ваш отель. Обед в пути.
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <section class="block-2">
+    <div class="block-2-form">
+      <p class="block-2-form__title">Если вы желаете после сафари продолжить отдых на побережье кении <br>
+        или на острове <br>
+        занзибар, мы с удовольствием подберём <br>
+        вам отели и поможем в организации
+      </p>
+      {% include '__includes/ticket-form.html' with ticket=True %}
+    </div>
+  </section>
+  <section class="block-3">
+    <div class="block-3-content">
+      <p class="block-3-content__title">стоимость программы на человека:</p>
+      <table class="block-3-content-table">
+        <tr class="block-3-content-table-tr__title">
+          <td>Категория лоджей и отелей</td>
+          <td>Часть 1(6 дней)</td>
+          <td>Часть 2(3 дня)</td>
+        </tr>
+        <tr>
+          <td>Classic:</td>
+          <td>1450 долларов США</td>
+          <td>600 долларов США</td>
+        </tr>
+        <tr>
+          <td>Economy:</td>
+          <td>1250 долларов США</td>
+          <td>600 долларов США*</td>
+        </tr>
+      </table>
+      <p class="block-3-content-ps">
+        * категории Economy не предусмотренно во второй части сафари <br>
+        ** цена может немного корректироваться исходя из количества человек как в большую сторону, так и в меньшую
+      </p>
+      <p class="block-3-content__continue">
+        Если вы желаете после сафари продолжить отдых на побережье Кении или на острове <br> Занзибар, мы с удовольствием подберём вам отель о поможем в организации
+      </p>
+
+      <div class="block-3-content-price_list">
+        <p class="block-3-content-price_list__title">Что входит в стоимость</p>
+        <ul class="block-3-content-price_list-ul">
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-transfer">Трансфер из аэропорта и обратно</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-food_truck">Индивидуальный транспорт <br>(сафарийный минивен с откидной крышей)</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-car">Англоговорящий водитель</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-woman">Рускоговорящий гид</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-purse">Входная плата в национальные парки</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-canoe">Прогулка на лодке по озеру Найваши</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-houses">Проживание и патание в указанных <br> местах (полный пансион)</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-bottle">Вода в машине</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-sim_cad">Местные сим карты с небольшим <br>балансом и интернетом на время сафари</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-domik">Посещение масайской деревни</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-crescent">Посещение острова Crescent</p>
+          </li>
+        </ul>
+      </div>
+      <div class="block-3-content-price_list">
+        <p class="block-3-content-price_list__title">Оплачивается отдельно</p>
+        <ul class="block-3-content-price_list-ul">
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-airplane">Международные перелёты</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-visa">Виза Кении</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-med">Медицинская страховка</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-alko">Алкоголь</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-drink">Напитки в ресторанах</p>
+          </li>
+          <li class="block-3-content-price_list-ul-li">
+            <p class="icone-coin">Чаевые</p>
+          </li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      {% include '__includes/ticket-form.html' with travel=True %}
+    </div>
+  </section>
+  <section class="map">
+    <h2 class="map__title">Карта</h2>
+    <img src="{{ STATIC_URL }}img/map.jpg" alt="">
+  </section>
+  <section class="block-4">
+    <div class="block-4-header">
+      <h2 class="block-4-header__title">Наш сопровождающий</h2>
+    </div>
+    <div class="block-4-photo">
+      <div class="block-4-photo-wrapper">
+        <img src="{{ STATIC_URL }}img/avatar.png" alt="" class="block-4-photo-wrapper__img">
+        <p class="block-4-photo-wrapper__name">Александр <br> Стригайлов</p>
+      </div>
+    </div>
+    <div class="block-4-description">
+      <p class="block-4-description__text">Привет! <br>
+        Коротко о себе: Путешествию всю жизнь, позади сотни тысяч км автостопом или на велосипеде по всему миру.
+        Влюбился в Африку, перевёз из Москвы в Кению свою семью. Живём с тремя маленькими детьми на океане в небольшом городке Малинди.
+        <br><br>
+        "Сделай своё любимое дело работой, и ты никогда в жизни больше не будешь работать"
+        <br><br>
+        В Африке я занят своим любимым делом - путешествиями
+      </p>
+      <ul class="block-4-description-list">
+        <li class="block-4-description-list__item">
+          <p class="block-4-description-list__item-content">Организую сафари по национальным паркам Кении, Танзании, Уганды, Руанды</p>
+        </li>
+        <li class="block-4-description-list__item">
+          <p class="block-4-description-list__item-content">Полёты на легкомоторных самолётах, рафтинг, путешествия на велосипедах</p>
+        </li>
+        <li class="block-4-description-list__item">
+          <p class="block-4-description-list__item-content">Отдых на океане в Кении: Диани, Ватаму, Малинди, Ламу</p>
+        </li>
+        <li class="block-4-description-list__item">
+          <p class="block-4-description-list__item-content">Работа со съёмочными группами</p>
+        </li>
+      </ul>
+      <p class="block-4-description__ps">
+        До встречи в африке!
+      </p>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-form">
+      <p class="footer-form__title">Сделай шаг навстречу мечте!</p>
+      {% include '__includes/ticket-form.html' %}
+    </div>
+  </footer>
+</div>
+<a href="#pop" id="popupbutton">Всплывающее окно</a>
+<div id="pop">
+  {% include "__includes/pop-form.html" %}
+</div>
+{{ setup.bottom_js|safe|default:'' }}
+</body>
+</html>

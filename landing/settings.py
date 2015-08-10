@@ -14,8 +14,13 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'admin@enjoy-africa.ru'
+EMAIL_HOST = 'smtp.fullspace.ru'
+EMAIL_HOST_USER = 'admin@enjoy-africa.ru'
+EMAIL_HOST_PASSWORD = 'alena2010'
 
 # Application definition
 
@@ -46,6 +51,7 @@ from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
 
 TEMPLATE_CONTEXT_PROCESSORS = TCP + (
     'django.core.context_processors.request',
+    'core.context_processors.travels.travels',
 )
 
 INTERNAL_IPS = '127.0.0.1'
@@ -57,13 +63,24 @@ DEBUG_TOOLBAR_PATCH_SETTINGS = False
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+else:
+    DATABASES = {
+         'default': {
+             'ENGINE': 'django.db.backends.mysql',
+             'NAME': 'enjoyafrru_safar',
+             'USER': 'enjoyafrru',
+             'PASSWORD': 'f3ccb431',
+             'HOST': 'localhost',
+             'PORT': '',
+         }
+    }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/

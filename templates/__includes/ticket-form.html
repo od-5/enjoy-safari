@@ -1,0 +1,13 @@
+<form action="" method="post" class="ticket-form">
+  <input type="text" name="name" class="ticket-form_input ticket-form__name{% if travel %} ticket-form__name__travel ticket-form_input__travel{% endif %}" placeholder="Ваше имя">
+  <input type="text" name="phone" class="ticket-form_input ticket-form__phone{% if travel %} ticket-form__phone__travel ticket-form_input__travel{% endif %}" placeholder="Ваш телефон">
+  <a href="#pop" class="popupbutton ticket-form_input ticket-form_submit{% if travel %} ticket-form_submit__travel{% endif %}">
+    {% if ticket %}
+      Оставить заявку
+    {% elif travel %}
+      Отправиться в путешествие
+    {% else %}
+      Да! Я хочу на сафари
+    {% endif %}
+    </a>
+</form>

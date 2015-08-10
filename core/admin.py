@@ -16,10 +16,10 @@ class TicketAdminForm(ModelForm):
 
 
 class TicketAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'created', 'ticket_status', 'ticket_comment')
-    list_filter = ['email', 'created', 'ticket_status']
+    list_display = ('name', 'phone', 'created', 'ticket_status', 'ticket_comment')
+    list_filter = ['phone', 'created', 'ticket_status']
     date_hierarchy = 'created'
-    fields = ('name', 'email', 'comment', 'sale', 'ticket_status', 'ticket_comment')
+    fields = ('name', 'phone', 'comment', 'sale', 'ticket_status', 'ticket_comment')
     form = TicketAdminForm
 
     def queryset(self, request):
@@ -77,10 +77,10 @@ class SaleAdmin(admin.ModelAdmin):
         if css_class:
             return {'class': css_class, 'data': obj.name}
 
-    list_display = ('name', 'email', 'price', 'commission', 'total_price', 'sale_status', 'sale_comment')
+    list_display = ('name', 'phone', 'price', 'commission', 'total_price', 'sale_status', 'sale_comment')
     list_filter = ['travel_start', 'sale_status', ]
     date_hierarchy = 'travel_start'
-    fields = ('name', 'email', 'comment', 'sale', 'sale_status', 'sale_comment', 'travel_start', 'travel_end', 'price', 'commission', 'total_price')
+    fields = ('name', 'phone', 'comment', 'sale', 'sale_status', 'sale_comment', 'travel_start', 'travel_end', 'price', 'commission', 'total_price')
     form = SaleAdminForm
 
 
