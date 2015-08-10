@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     url(r'^$', 'core.views.home_view', name='home'),
     url(r'^ticket$', 'core.views.ticket', name='ticket'),
     # url(r'^blog/', include('blog.urls')),
-
+    url(r'^ckeditor/', include('ckeditor.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
 

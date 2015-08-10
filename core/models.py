@@ -1,4 +1,5 @@
 # coding=utf-8
+from ckeditor.fields import RichTextField
 from django.db import models
 
 __author__ = 'alexey'
@@ -57,6 +58,7 @@ class Setup(models.Model):
     meta_desc = models.TextField(verbose_name=u'Описание META_DESCRIPTION', blank=True)
     top_js = models.TextField(verbose_name=u'Скрипты в <HEAD>..</HEAD>', blank=True)
     bottom_js = models.TextField(verbose_name=u'Скрипты перед закрывающим </BODY>', blank=True)
+    seats = RichTextField(verbose_name=u'Количество мест', blank=True, null=True)
 
     def __unicode__(self):
         return self.title

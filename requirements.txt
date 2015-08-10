@@ -2,3 +2,4 @@ django==1.7
 django-suit==0.2.13
 django-debug-toolbar
 mysql-python
+django-ckeditor==4.5.0

@@ -33,6 +33,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
+    'ckeditor',
     'core',
 )
 
@@ -134,4 +135,21 @@ SUIT_CONFIG = {
         {'label': u'Продажи', 'icon': 'icon-user', 'models': ('core.sale',)},
         {'label': u'enjoy-africa.ru', 'url': 'http://www.enjoy-africa.ru/admin'},
     ),
+}
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+CKEDITOR_CONFIGS = {
+    'default': {
+        'height': 400,
+        'width': 500,
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['FontSize', 'TextColor'],
+            ['Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink'],
+            ['RemoveFormat', 'Source', 'Table']
+        ]
+    },
 }

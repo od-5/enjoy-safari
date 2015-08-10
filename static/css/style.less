@@ -95,6 +95,15 @@ section {
   display: none;
 }
 
+.seats {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  right: 30px;
+  width: 260px;
+  color: #fff;
+}
+
 .header {
   background: url('../img/header__bg.jpg') no-repeat;
   -webkit-background-size: cover;
@@ -158,8 +167,8 @@ section {
   }
 }
 .day {
-  -webkit-background-size: cover;
-        background-size: cover;
+  -webkit-background-size: 100%;
+        background-size: 100%;
   position: relative;
   &__title {
     position: absolute;
@@ -175,7 +184,7 @@ section {
   &-content {
     background: rgba(0, 0, 0, 0.5);
     width: 50%;
-    padding-bottom: 220px;
+    padding-bottom: 80px;
     &__title {
       font-size: 45px;
       font-weight: bold;
@@ -190,7 +199,7 @@ section {
       &__item {
         padding-left: 20px;
         color: #fff;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 25px;
         padding-bottom: 25px;
         font-family: Arial, Helvetica, sans-serif;
@@ -202,7 +211,7 @@ section {
     }
   }
   &-1 {
-    background: url('../img/day-1.jpg') no-repeat;
+    background-image: url('../img/day-1.jpg');
     &-content {
       float: left;
       &__title {
@@ -211,38 +220,39 @@ section {
     }
   }
   &-2 {
-    background: url('../img/day-2.jpg') no-repeat;
+    background-image: url('../img/day-2.jpg');
     &-content {
       float: right;
     }
   }
   &-3 {
-    background: url('../img/day-3.jpg') no-repeat;
+    background-image: url('../img/day-3.jpg');
     &-content {
       float: left;
     }
   }
   &-4 {
-    background: url('../img/day-4.jpg') no-repeat;
+    background-image: url('../img/day-4.jpg');
     &-content {
       float: right;
     }
   }
   &-5 {
-    background: url('../img/day-5.jpg') no-repeat;
+    background-image: url('../img/day-5.jpg');
     &-content {
       float: left;
     }
   }
   &-6 {
-    background: url('../img/day-6.jpg') no-repeat;
+    background-image: url('../img/day-6.jpg');
     &-content {
       float: right;
     }
   }
   &-7 {
-    background: url('../img/day-7.jpg') no-repeat;
+    background-image: url('../img/day-7.jpg');
     &-content {
+      padding-bottom: 0;
       float: left;
       &__title {
         padding-top: 50px;
@@ -250,14 +260,15 @@ section {
     }
   }
   &-8 {
-    background: url('../img/day-8.jpg') no-repeat;
+    background-image: url('../img/day-8.jpg');
     &-content {
       float: right;
     }
   }
   &-9 {
-    background: url('../img/day-9.jpg') no-repeat;
+    background-image: url('../img/day-9.jpg');
     &-content {
+      padding-bottom: 330px;
       float: left;
     }
   }

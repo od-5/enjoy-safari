@@ -105,6 +105,14 @@ section {
 #pop {
   display: none;
 }
+.seats {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  right: 30px;
+  width: 260px;
+  color: #fff;
+}
 .header {
   background: url('../img/header__bg.jpg') no-repeat;
   -webkit-background-size: cover;
@@ -159,8 +167,8 @@ section {
   line-height: 39px;
 }
 .day {
-  -webkit-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 100%;
+  background-size: 100%;
   position: relative;
 }
 .day__title {
@@ -177,7 +185,7 @@ section {
 .day-content {
   background: rgba(0, 0, 0, 0.5);
   width: 50%;
-  padding-bottom: 220px;
+  padding-bottom: 80px;
 }
 .day-content__title {
   font-size: 45px;
@@ -194,7 +202,7 @@ section {
 .day-content-list__item {
   padding-left: 20px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 25px;
   padding-bottom: 25px;
   font-family: Arial, Helvetica, sans-serif;
@@ -204,7 +212,7 @@ section {
   text-decoration: none;
 }
 .day-1 {
-  background: url('../img/day-1.jpg') no-repeat;
+  background-image: url('../img/day-1.jpg');
 }
 .day-1-content {
   float: left;
@@ -213,54 +221,56 @@ section {
   padding-top: 50px;
 }
 .day-2 {
-  background: url('../img/day-2.jpg') no-repeat;
+  background-image: url('../img/day-2.jpg');
 }
 .day-2-content {
   float: right;
 }
 .day-3 {
-  background: url('../img/day-3.jpg') no-repeat;
+  background-image: url('../img/day-3.jpg');
 }
 .day-3-content {
   float: left;
 }
 .day-4 {
-  background: url('../img/day-4.jpg') no-repeat;
+  background-image: url('../img/day-4.jpg');
 }
 .day-4-content {
   float: right;
 }
 .day-5 {
-  background: url('../img/day-5.jpg') no-repeat;
+  background-image: url('../img/day-5.jpg');
 }
 .day-5-content {
   float: left;
 }
 .day-6 {
-  background: url('../img/day-6.jpg') no-repeat;
+  background-image: url('../img/day-6.jpg');
 }
 .day-6-content {
   float: right;
 }
 .day-7 {
-  background: url('../img/day-7.jpg') no-repeat;
+  background-image: url('../img/day-7.jpg');
 }
 .day-7-content {
+  padding-bottom: 0;
   float: left;
 }
 .day-7-content__title {
   padding-top: 50px;
 }
 .day-8 {
-  background: url('../img/day-8.jpg') no-repeat;
+  background-image: url('../img/day-8.jpg');
 }
 .day-8-content {
   float: right;
 }
 .day-9 {
-  background: url('../img/day-9.jpg') no-repeat;
+  background-image: url('../img/day-9.jpg');
 }
 .day-9-content {
+  padding-bottom: 330px;
   float: left;
 }
 .block-2 {

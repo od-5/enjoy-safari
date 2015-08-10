@@ -22,6 +22,9 @@
 <body>
 <div id="wrapper">
   <header class="header">
+    <div class="seats">
+      {{ setup.seats|safe|default:'' }}
+    </div>
     <h1 class="header-h1">Групповые туры в Кению <br> по самым интересным маршрутам</h1>
     <div class="header-form">
       <p class="header-form__title">Напрямую от местного туроператора по специальной цене
