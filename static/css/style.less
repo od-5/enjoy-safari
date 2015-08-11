@@ -448,7 +448,7 @@ section {
 .block-3 {
   padding-bottom: 30px;
   &-content {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     &__title {
       color: #333;
@@ -583,7 +583,7 @@ section {
     &-content {
       &__title {
         line-height: 100px;
-        font-size: 40px;
+        font-size: 35px;
         font-weight: bold;
       }
       &-ps {
@@ -747,4 +747,18 @@ section {
       }
     }
   }
+}
+
+#scrollup {
+  position: fixed; /* фиксированная позиция */
+  opacity: 0.8; /* прозрачность */
+  padding: 15px 10px 10px; /* отступы */
+  background: #aaa;
+  border-radius: 5px; /* скругление углов */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  right: 10px; /* отступ слева */
+  bottom: 10px; /* отступ снизу */
+  display: none; /* спрятать блок */
+  cursor: pointer;
 }

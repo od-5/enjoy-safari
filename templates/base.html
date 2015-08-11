@@ -12,6 +12,7 @@
   <script src="{{ STATIC_URL }}js/jquery.form.js"></script>
   <script src="{{ STATIC_URL }}js/jquery.fancybox.pack.js"></script>
   <script src="{{ STATIC_URL }}js/common.js"></script>
+  <script src="{{ STATIC_URL }}js/scrollup.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/reset.css">
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/animate.css">
@@ -420,6 +421,7 @@
 <div id="pop">
   {% include "__includes/pop-form.html" %}
 </div>
+<div id="scrollup"><img alt="Прокрутить вверх" src="{{ STATIC_URL }}img/up.png"></div>
 {{ setup.bottom_js|safe|default:'' }}
 </body>
 </html>
