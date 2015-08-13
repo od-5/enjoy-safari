@@ -21,9 +21,9 @@ def home_view(request):
 @csrf_exempt
 def ticket(request):
     try:
-        email = Setup.objects.all()[0].email
+        receoient = Setup.objects.all()[0].email
     except:
-        email = 'od-5@yandex.ru'
+        receoient = 'od-5@yandex.ru'
     if request.method == "POST":
         name = request.POST.get('name')
         email = request.POST.get('email')
@@ -38,7 +38,7 @@ def ticket(request):
             u'enjoy-safari.ru - Заявка с сайта',
             message,
             settings.DEFAULT_FROM_EMAIL,
-            [email, ]
+            [receoient, ]
         )
         return HttpResponse('true')
 
